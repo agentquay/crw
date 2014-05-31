@@ -1,0 +1,53 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+$break-small: 90%;
+$margin: 1%;
+$color: blue;
+@mixin corners{
+	$rounded-corner-radius: 40px;
+  -webkit-border-radius: $rounded-corner-radius;
+  -moz-border-radius: $rounded-corner-radius;
+  -ms-border-radius: $rounded-corner-radius;
+  border-radius: $rounded-corner-radius;
+}
+
+body{
+	
+	margin: $margin;
+
+}
+
+.container{
+	
+	margin: $margin;
+	@media screen and (max-width: $break-small) {
+    width: 100px;
+    float: none;
+  }
+  div{
+      float: left;
+
+      .class{
+          margin: $margin;
+      }
+  }
+}
+
+ul{
+
+    color: $color;
+	
+	li{
+	    @include corners;
+
+	    margin: $margin;
+
+	    ul{
+	       width: $break-small;
+	    }
+	}
+}

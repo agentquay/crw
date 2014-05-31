@@ -1,0 +1,61 @@
+/*
+Syntax error: File to import not found or unreadable: compass/reset.
+              Load paths:
+                /Users/marquay/crw
+                /Users/marquay/crw/sass
+        on line 6 of sass/screen.scss
+
+1: /* Welcome to Compass.
+2:  * In this file you should write your main styles. (or centralize your imports)
+3:  * Import this file using the following HTML or equivalent:
+4:  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> *\/
+5: 
+6: @import "compass/reset";
+7: $break-small: 90%;
+8: $margin: 1%;
+9: $color: blue;
+10: @mixin corners{
+11: 	$rounded-corner-radius: 40px;
+
+Backtrace:
+sass/screen.scss:6
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/import_node.rb:45:in `import'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/tree/root_node.rb:20:in `render'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/engine.rb:315:in `_render'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/engine.rb:262:in `render'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/exec.rb:443:in `watch_or_update'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/exec.rb:326:in `process_result'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/exec.rb:41:in `parse'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/lib/sass/exec.rb:21:in `parse!'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/gems/sass-3.2.12/bin/sass:9:in `<top (required)>'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/bin/sass:19:in `load'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/bin/sass:19:in `<main>'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/marquay/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: compass/reset.\A               Load paths:\A                 /Users/marquay/crw\A                 /Users/marquay/crw/sass\A         on line 6 of sass/screen.scss\A \A 1: /* Welcome to Compass.\A 2:  * In this file you should write your main styles. (or centralize your imports)\A 3:  * Import this file using the following HTML or equivalent:\A 4:  * <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 5: \A 6: @import \"compass/reset\";\A 7: $break-small: 90%;\A 8: $margin: 1%;\A 9: $color: blue;\A 10: @mixin corners{\A 11: 	$rounded-corner-radius: 40px;"; }
